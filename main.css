@@ -129,9 +129,64 @@ hr{
     color: #6c5ce7;
 }
 
+.menu i{
+  position: absolute;
+  width: 500px;
+  height: 16px;
+  margin-left: -235px;
+  margin-top: 4px;
+}
 
+.menu i:hover{
+  animation: q1 0.4s ease-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards; 
+}
 
+@keyframes q1{
+  to{
+    transform: rotate(-90deg);
+  }
+}
 
+.sub-menu ul{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  list-style-type: none;
+  overflow: hidden;
+  font-family: Oswald;
+}
+
+.sub-menu li{
+  float: left;
+}
+
+.sub-menu a{
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0984e3;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.4s linear;
+}
+
+.sub-menu a:hover{
+  color:  #fff;
+  animation: q2 0.4s ease-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes q2{
+  to{
+    font-size: 120%;
+  }
+}
 
 
 

@@ -136,88 +136,91 @@ hr{
 
 
 .conteiner{
-    padding: 40px;
-    font-family: montserrat, Sans-Serif;
+    display: flex;
+    
 }
 
-.sub-title{
-    font-size: 30px;
-    text-transform: uppercase;
-}
 
-.sub-img{
-  padding-left: 20px0;
-}
 
 
 
 .fotter{
-    height: 50%;
-    background-color: #00cec9;
-  }
-  
-  
-  .share {
-    display:  inline-block;
-    margin-top: 5%;
-    margin-left: 25%;
-    font-size: 20px;
-    color: #fff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    line-height: 45px;
-  }
-  
-  .share i{
-    font-size: 25px;
-    transition: color 2.5s liner;
-    opacity: 0%;
-  }
-  
-  .share a{
-    color: #fff;
-  }
-  
-  .share li:hover{
-    color: #6c5ce7;
-  }
-  
-  .about{
-    display:  inline-block;
-    margin-top: 5%;
-    margin-left: 25%;
-    font-size: 20px;
-    color: #fff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    line-height: 45px;
-    transition: color 2.5s linear;
-  }
-  
-  .about i{
-    font-size: 25px;
-    transition: color 2.5s liner;
-  }
-  
-  .about a{
-    color: #fff;
-  }
-  
-  .about li:hover, a:hover{
-    color: #6c5ce7;
-  }
-  
-  
-  .copy{
-    position: absolute;
-    height: 9%;
-    width: 100%;
-    background-color: #38ada9;
-  }
-  
-  .copy-text{
-    text-align: center;
-    margin-top: 25px;
-  }
+  height: 50%;
+  background-color: #00cec9;
+  position: bottom;
+}
+
+
+.share {
+  display:  inline-block;
+  margin-top: 5%;
+  margin-left: 25%;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 45px;
+}
+
+.share i{
+  font-size: 25px;
+  transition: color 2.5s liner;
+  opacity: 0%;
+}
+
+.share a{
+  color: #fff;
+}
+
+.share li:hover{
+  color: #6c5ce7;
+}
+
+.about{
+  display:  inline-block;
+  margin-top: 5%;
+  margin-left: 25%;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 45px;
+  transition: color 2.5s linear;
+}
+
+.about i{
+  font-size: 25px;
+  transition: color 2.5s liner;
+}
+
+.about a{
+  color: #fff;
+}
+
+.about li:hover, a:hover{
+  color: #6c5ce7;
+}
+
+
+.copy{
+  position: absolute;
+  height: 9%;
+  width: 100%;
+  background-color: #38ada9;
+}
+
+.copy-text{
+  text-align: center;
+  margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
