@@ -3,15 +3,8 @@
     font-family: Quantum;
 }
 
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body{
-    background-color: alicblue;
+    background-color: aliceblue;
     margin: 0px;
     padding: 0px;
     height: 100vh;
@@ -26,21 +19,13 @@ hr{
 
 
 
-.preloader{
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  padding-top: 20%;
-  background:aliceblue;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  transition: opacity 0.5s linear;
-}
+
 
 
 .loading{
   font-family: montserrat,Sans-serif;
+  top: 40%;
+  left: 43%;
   display: flex;
   width: 200px;
   height: 200px;
@@ -51,11 +36,6 @@ hr{
   align-items: center;
   justify-content: center;
   animation: a1 2s linear infinite;
-}
-
-.preloader-finish{
-  opacity: 0;
-  pointer-events: none;
 }
 
 .loading::before,.loading::after{
@@ -99,13 +79,62 @@ hr{
 }
 
 
+
+
+.conteiner{
+    padding: 40px;
+}
+
+.conteiner h1{
+  font-size: 70px;
+  font-family: Oswald, sans-serif;
+  color: #2d3436;
+  text-shadow: 5px 2px #dfe6e9;
+  font-weight: 400;
+}
+
+.conteiner p{
+  font-family: Oswald, sans-serif;
+  font-size: 25px;
+
+}
+
+
+
+
+.conteiner button{
+  background-color: aliceblue;
+  border: 2px solid #00cec9;
+  border-radius: 6px;
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  position: relative;
+  min-width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+}
+.conteiner button:hover{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+
+
+
+
 .menu ul{
     margin: 0;
     padding: 0;
+    padding-top: 0px;
+    margin-top: 0px;
     background-color: #00cec9;
     list-style-type: none;
     overflow: hidden;
     font-family: Oswald;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .menu li{
@@ -129,93 +158,6 @@ hr{
     color: #6c5ce7;
 }
 
-.menu i{
-  position: absolute;
-  width: 500px;
-  height: 16px;
-  margin-left: -235px;
-  margin-top: 4px;
-}
-
-.menu i:hover{
-  animation: q1 0.4s ease-out;
-  animation-delay: 0.1s;
-  animation-fill-mode: forwards; 
-}
-
-@keyframes q1{
-  to{
-    transform: rotate(-90deg);
-  }
-}
-
-.sub-menu ul{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: #fff;
-  list-style-type: none;
-  overflow: hidden;
-  font-family: Oswald;
-}
-
-.sub-menu li{
-  float: left;
-}
-
-.sub-menu a{
-  display: block;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #0984e3;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: color 0.4s linear;
-}
-
-.sub-menu a:hover{
-  color:  #fff;
-  animation: q2 0.4s ease-out;
-  animation-delay: 0.1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes q2{
-  to{
-    font-size: 120%;
-  }
-}
-
-
-
-.conteiner{
-    padding: 40px;
-}
-
-.conteiner h1{
-  font-size: 70px;
-  font-family: Oswald, sans-serif;
-  color: #2d3436;
-  text-shadow: 5px 2px #dfe6e9;
-  font-weight: 400;
-}
-
-.conteiner p{
-  font-family: Oswald, sans-serif;
-  font-size: 25px;
-
-}
-
-.conteiner a{
-  color: #2d3436;
-}
-
-.conteiner a:hover{
-  color: #81ecec;
-  transition: color 0.2s linear;
-}
 
 
 .serv-section{
@@ -288,86 +230,6 @@ hr{
 .serv-desc{
   font-size: 14px;
 }
-
-
-
-.fotter{
-  height: 50%;
-  background-color: #00cec9;
-  position: bottom;
-}
-
-
-.share {
-  display:  inline-block;
-  margin-top: 5%;
-  margin-left: 25%;
-  font-size: 20px;
-  color: #fff;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  line-height: 45px;
-}
-
-.share i{
-  font-size: 25px;
-  transition: color 2.5s liner;
-  opacity: 0%;
-}
-
-.share a{
-  color: #fff;
-}
-
-.share li:hover{
-  color: #6c5ce7;
-}
-
-.about{
-  display:  inline-block;
-  margin-top: 5%;
-  margin-left: 25%;
-  font-size: 20px;
-  color: #fff;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  line-height: 45px;
-  transition: color 2.5s linear;
-}
-
-.about i{
-  font-size: 25px;
-  transition: color 2.5s liner;
-}
-
-.about a{
-  color: #fff;
-}
-
-.about li:hover, a:hover{
-  color: #6c5ce7;
-}
-
-
-.copy{
-  position: absolute;
-  height: 9%;
-  width: 100%;
-  background-color: #38ada9;
-}
-
-.copy-text{
-  text-align: center;
-  margin-top: 25px;
-}
-
-
-
-
-
-
 
 
 
