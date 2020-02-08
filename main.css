@@ -181,8 +181,9 @@ margin-top: 4px;
 }
 
 @keyframes q2{
-to{
-  font-size: 120%;
+  to{
+    font-size: 120%;
+  }
 }
 
 
