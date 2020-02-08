@@ -2,35 +2,53 @@
 <html lang="pt-br">
     <head>
         <title> ICA </title>
-        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="./app.js"> </script>
+
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     </head>
     <body>
-      <div class="loading">
-          <div class="loading-text"> Carregando... </div>
-      </div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+        
+        <div class="preloader">
+            <div class="loading">
+                <div class="loading-text"> Carregando... </div>
+            </div>
+        </div>
+
         <div class="menu">
             <ul>
-                <li><a href="#inicio">Materiais</a></li>
-                <li style="float: right;"><a href="#inicio">Sobre o ICA</a></li>
+                <li><a href="mats.html">Materias <i class="fas fa-caret-down"></i></a></li>
+                <li style="float: right;"><a href="about.html">Sobre o ICA</a></li>
                 <li style="font-family: Quantum; font-size: 18px; padding-left: 38%;"><a href="index.html">ICA</a></li>
                 <li style="float: right;"><a href="#inicio">Apoie</a></li>
             </ul>
-          <hr/>
+            <hr/>
+        </div> 
+        
+        <div class="sub-menu">
+            <ul>
+                <li><a href="mats.html"> <i class="fas fa-flask"></i> Física </a></li>
+                <li><a href="mats.html"> <i class="fas fa-divide"></i> Matemática</a></li>         
+                <li><a href="mats.html"> <i class="fas fa-code"></i> Programação</a></li>         
+                <li><a href="mats.html"> <i class="fas fa-robot"></i> Robótica</a></li>         
+                <li><a href="mats.html"> <i class="fas fa-music"></i> Música</a></li>
+            </ul>
         </div>
+        </br>
+
         <div class="conteiner">
             <img class="responsive-img"src="Fotos/Ica_Blank.png" align ="left" style="width: 500px; padding: 50px"></img>
                 <h1><br/>Todos merecem </br> aprender.</h1>
             <p>
                 Somos uma iniciativa afim de levar o aprendizado das mais diversas
-                metérias para crianças e adultos de maneira gratúita.<br/>
+                metérias para crianças e adultos de maneira gratúita. <a href="#SaibaMais">Saiba Mais !</a><br/><br/><br/><br/>
             </p>
-            <button>Saiba Mais !</button><br/>
-            </div> </br>
+        </div></br>
+        
             <div class="serv-section"> 
                 <div class="inner-width">
                     <h1 class="section-title">O que Oferecemos</h1>
@@ -42,7 +60,8 @@
                             </div>
                             <div class="serv-title">Robótica</div>
                             <div class="serv-desc">
-                                blá blá blá blá blá
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac urna eros. 
+                                    Aenean sollicitudin varius neque, a volutpat nisi tempus ac.
                             </div>
                         </div>
                         <div class="serv-box">
@@ -51,7 +70,8 @@
                             </div>
                             <div class="serv-title">Programação</div>
                             <div class="serv-desc">
-                                blá blá blá blá blá
+                                    Quisque venenatis tristique porta. Proin convallis, arcu ut pulvinar laoreet, 
+                                    dui nunc porta felis, at rutrum lacus eros vestibulum sapien.
                             </div>
                         </div>
                         <div class="serv-box">
@@ -60,20 +80,69 @@
                             </div>
                             <div class="serv-title">Matemática</div>
                             <div class="serv-desc">
-                                blá blá blá blá blá
+                                    Mauris euismod augue et arcu euismod, ac rhoncus odio pulvinar. Integer rhoncus ullamcorper lorem 
+                                    sit amet pulvinar.
                             </div>
                         </div>
                         <div class="serv-box">
-                        <div class="serv-icon">
-                            <i class="fas fa-music"></i>
+                            <div class="serv-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="serv-title">Música</div>
+                            <div class="serv-desc">
+                                In rutrum posuere enim, hendrerit iaculis nisl faucibus id. Etiam dapibus lectus consectetur risus dictum posuere. 
+                                Integer elementum, nunc ac scelerisque gravida, risus risus egestas mauris, ac tempus ante lacus ac velit.
+                            </div>
                         </div>
-                        <div class="serv-title">Música</div>
-                        <div class="serv-desc">
-                            blá blá blá blá blá
-                         </div>
+                        <div class="serv-box">
+                            <div class="serv-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <div class="serv-title">Física</div>
+                            <div class="serv-desc">
+                                In rutrum posuere enim, hendrerit iaculis nisl faucibus id. Etiam dapibus lectus consectetur risus dictum posuere. 
+                                Integer elementum, nunc ac scelerisque gravida, risus risus egestas mauris, ac tempus ante lacus ac velit.
+                            </div>
+                        </div>
+                        <div class="serv-box">
+                            <div class="serv-icon">
+                                <i class="fas fa-car-battery"></i>
+                            </div>
+                            <div class="serv-title">Eletrônica</div>
+                            <div class="serv-desc">
+                                In rutrum posuere enim, hendrerit iaculis nisl faucibus id. Etiam dapibus lectus consectetur risus dictum posuere. 
+                                Integer elementum, nunc ac scelerisque gravida, risus risus egestas mauris, ac tempus ante lacus ac velit.
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div></br></br></br>
+
+            <div class="fotter">
+                <div class="share">
+                    <div class="share-title"> Compartilhe:</div>
+                        <ul>
+                            <li><i class="fab fa-whatsapp"></i><a href="#WhatsApp"> WhatsApp</a></li>
+                            <li><i class="fab fa-facebook"></i><a href="#Facebook"> Facebook</a></li>
+                            <li><i class="fab fa-instagram"></i><a href="#Instagram"> Instagram</a></li>
+                            <li><i class="fab fa-twitter"></i><a href="#Twitter"> Twitter</a> </li>
+                        </ul>
+                </div>
+                <div class="about">
+                    <div class="about-title"> Sobre Nós:</div>
+                        <ul>
+                            <li><i class="fas fa-envelope "></i><a href="#Contato"> Entre em Contato</a></li>
+                            <li><i class="fas fa-users"></i><a href="#Email"> Nos Siga</a></li>
+                            <li><i class="fas fa-star"></i><a href="#Doacao"> Apoie</a></li>
+                            <li><i class="fas fa-file-code"></i><a href="#Criadores"> Sobre</a></li>
+                        </ul>
+                </div></br></br></br>
+                <div class="copy">
+                    <div class="copy-text">
+                        © 2019 ICA Initiative, All Rights Reserved.
+                    </div>
+                </div>
             </div>
+
     </body>
 </html>
