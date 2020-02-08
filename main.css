@@ -99,6 +99,7 @@ to{
 }
 
 
+
 .menu ul{
   margin: 0;
   padding: 0;
@@ -110,11 +111,19 @@ to{
 
 .menu li{
   float: left;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00cec9;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: color 0.4s linear;
 }
 
 .menu li a{
-  display: block;
-  padding: 14px 16px;
   text-decoration: none;
   color: #fff;
   background-color: #00cec9;
@@ -137,55 +146,43 @@ margin-left: -235px;
 margin-top: 4px;
 }
 
-.menu i:hover{
-animation: q1 0.4s ease-out;
-animation-delay: 0.1s;
-animation-fill-mode: forwards; 
-}
-
-@keyframes q1{
-to{
-  transform: rotate(-90deg);
-}
-}
-
 .sub-menu ul{
-margin: 0;
-padding: 0;
-width: 100%;
-background-color: #fff;
-list-style-type: none;
-overflow: hidden;
-font-family: Oswald;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  list-style-type: none;
+  overflow: hidden;
+  font-family: Oswald;
 }
 
 .sub-menu li{
-float: left;
+  float: left;
 }
 
 .sub-menu a{
-display: block;
-padding: 14px 16px;
-text-decoration: none;
-color: #fff;
-background-color: #0984e3;
-text-align: center;
-text-transform: uppercase;
-letter-spacing: 2px;
-transition: color 0.4s linear;
+  display: none;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0984e3;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.4s linear;
 }
 
 .sub-menu a:hover{
-color:  #fff;
-animation: q2 0.4s ease-out;
-animation-delay: 0.1s;
-animation-fill-mode: forwards;
+  color:  #fff;
+  animation: q2 0.4s ease-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes q2{
 to{
   font-size: 120%;
-}
 }
 
 
@@ -313,7 +310,6 @@ line-height: 45px;
 .share i{
 font-size: 25px;
 transition: color 2.5s liner;
-opacity: 0%;
 }
 
 .share a{
@@ -352,8 +348,10 @@ color: #6c5ce7;
 
 
 .copy{
+font-family: 'Courier New', Courier, monospace;
 position: absolute;
-height: 9%;
+height: 3%;
 width: 100%;
 background-color: #38ada9;
+text-align: center;
 }
