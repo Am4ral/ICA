@@ -3,7 +3,7 @@
     <head>
         <title> ICA </title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" type="text/css" href="account.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
         <script src="./app.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
@@ -20,8 +20,7 @@
             </div>
         </div>
         <form action="login.html" class="login">
-            <h1>Login</h1>
-
+            <h1>Criar Conta</h1>
 
             <div class="text-box">
                 <input type="text">
@@ -29,18 +28,23 @@
             </div>
 
             <div class="text-box">
+                <input type="text">
+                <span data-placeholder="Nome Completo"></span>
+            </div>
+
+            <div class="text-box">
                 <input type="password">
                 <span data-placeholder="Senha"></span>
             </div>
 
-            <input type="submit" class="login-btn" value="Login">
-
-            <div class="bottom-text">
-                Não tem uma conta ? <a href="account.html">Inscreva-se</a>
+            <div class="text-box">
+                <input type="password">
+                <span data-placeholder="Repetir Senha"></span>
             </div>
 
-        </form>
+            <input type="submit" class="login-btn" value="Inscrever-se">
 
+        </form>
         <script type="text/javascript">
             $(".text-box input").on("focus",function(){
                 $(this).addClass("focus");
@@ -51,6 +55,5 @@
                 $(this).removeClass("focus");
             });
         </script>
-
     </body>
 </html>
