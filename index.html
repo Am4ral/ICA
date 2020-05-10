@@ -4,11 +4,17 @@
         <title> ICA </title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="main.css">
-        <script src="./app.js"> </script>
+
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="Scripts/auth.js"></script>
+        <script src="Scripts/index.js"></script>
+        <script src="Scripts/loading.js"> </script>
 
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     </head>
     <body>
@@ -19,34 +25,75 @@
             </div>
         </div>
 
-        <div class="menu">
-            <ul>
-                <li onclick="dropMenu()">Materias <i class="fas fa-caret-down"></i></li>
-                <li style="float: right;"><a href="about.html">Sobre o ICA</a></li>
-                <li style="font-family: Quantum; font-size: 18px; padding-left: 38%;"><a href="index.html">ICA</a></li>
-                <li style="float: right;"><a href="login.html">Entrar</a></li>
-            </ul>
-            <hr/>
-        </div> 
-        
-        <div class="sub-menu" id="sub-menu">
-            <ul>
-                <li><a href="mats.html"> <i class="fas fa-flask"></i> Física </a></li>
-                <li><a href="mats.html"> <i class="fas fa-divide"></i> Matemática</a></li>         
-                <li><a href="mats.html"> <i class="fas fa-code"></i> Programação</a></li>         
-                <li><a href="mats.html"> <i class="fas fa-robot"></i> Robótica</a></li>         
-                <li><a href="mats.html"> <i class="fas fa-music"></i> Música</a></li>
-                <li><a href="mats.html"> <i class="fas fa-car-battery"></i> Eletrônica</a></li>
-            </ul>
-        </div>
-        </br>
 
+        <!-- NAVBAR -->
+        <nav class="z-depth-1 cyan">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo">
+                    <img src="Fotos/Agr_Vai.svg" style="width: 180px; margin-top: 10px;">
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="logged-in">
+                        <a href="mats.html" >Materiais</a>
+                    </li>
+                    <li class="logged-in">
+                        <a href="#" class="white-text" id="logout">Desconectar</a>
+                    </li>
+                    <li class="logged-out">
+                        <a href="#" class="white-text modal-trigger" data-target="modal-login">Login</a>
+                    </li>
+                    <li class="logged-out">
+                        <a href="#" class="white-text modal-trigger" data-target="modal-signup">Cadastrar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- SIGN UP MODAL -->
+        <div id="modal-signup" class="modal">
+            <div class="modal-content">
+                <h4>Cadastre-se</h4><br />
+                <form id="signup-form">
+                    <div class="input-field">
+                        <input type="email" id="signup-email" required />
+                        <label for="signup-email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="signup-password" required />
+                        <label for="signup-password">Senha</label>
+                    </div>
+                    <input type="submit" class="login-btn" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+
+
+        <!-- LOGIN MODAL -->
+        <div id="modal-login" class="modal">
+            <div class="modal-content">
+                <h4>Login</h4><br />
+                <form id="login-form">
+                    <div class="input-field">
+                        <input type="email" id="login-email" required />
+                        <label for="login-email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="login-password" required />
+                        <label for="login-password">Sua senha</label>
+                    </div>
+                    <input type="submit" class="login-btn" value="Login">
+                </form>
+            </div>
+        </div>
+
+
+        <!-- INITIAL TEXT -->
         <div class="conteiner">
             <img class="responsive-img"src="Fotos/Ica_Blank.png" align ="left" style="width: 500px; padding: 50px"></img>
                 <h1><br/>Todos merecem </br> aprender.</h1>
             <p>
                 Somos uma iniciativa afim de levar o aprendizado das mais diversas
-                metérias para crianças e adultos de maneira gratúita. <a href="#SaibaMais">Saiba Mais !</a><br/><br/><br/><br/>
+                metérias para crianças e adultos de maneira gratúita.<br/><br/><br/><br/>
             </p>
         </div></br>
         
@@ -119,31 +166,59 @@
                 </div>
             </div></br></br></br>
 
-            <div class="fotter">
-                <div class="share">
-                    <div class="share-title"> Compartilhe:</div>
+        <footer class="page-footer cyan" >
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Contatos</h5>
+                        <p class="grey-text text-lighten-4">Entre em contato conosco. <br/> Email: icaInitiative@ica.com </p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Nos Siga!</h5>
                         <ul>
-                            <li><i class="fab fa-whatsapp"></i><a href="#WhatsApp"> WhatsApp</a></li>
-                            <li><i class="fab fa-facebook"></i><a href="#Facebook"> Facebook</a></li>
-                            <li><i class="fab fa-instagram"></i><a href="#Instagram"> Instagram</a></li>
-                            <li><i class="fab fa-twitter"></i><a href="#Twitter"> Twitter</a> </li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">GitHub</a></li>
                         </ul>
-                </div>
-                <div class="about">
-                    <div class="about-title"> Sobre Nós:</div>
-                        <ul>
-                            <li><i class="fas fa-envelope "></i><a href="#Contato"> Entre em Contato</a></li>
-                            <li><i class="fas fa-users"></i><a href="#Email"> Nos Siga</a></li>
-                            <li><i class="fas fa-star"></i><a href="#Doacao"> Apoie</a></li>
-                            <li><i class="fas fa-file-code"></i><a href="#Criadores"> Sobre</a></li>
-                        </ul>
-                </div></br></br></br>
-                <div class="copy">
-                    <div class="copy-text">
-                        © 2019 ICA Initiative, All Rights Reserved.
                     </div>
                 </div>
             </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2020 ICA Initiative, All Rights Reserved.
+                    <a class="grey-text text-lighten-4 right" href="about.html">Sobre nos</a>
+                </div>
+            </div>
+        </footer>
 
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCGHHN-6hQRWHgrVnRCl2Dkk0qJbt1sF4M",
+                authDomain: "ica-initiative.firebaseapp.com",
+                databaseURL: "https://ica-initiative.firebaseio.com",
+                projectId: "ica-initiative",
+                storageBucket: "ica-initiative.appspot.com",
+                messagingSenderId: "737717077970",
+                appId: "1:737717077970:web:669450f0a1c3373fcbea0b",
+                measurementId: "G-GB9N4Q7X76"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+
+            //Make Auth amd Firestore references
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+
+        </script>
     </body>
 </html>
